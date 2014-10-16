@@ -4,7 +4,7 @@ function [varargout] = dataset2vec(ds)
 % varagout: N-1 Faktoren und Zielgröße als einzelne Vektoren
 
 % Konvertieren des ds in eine Cell-Array
-ca = dataset2cell(ds);
+ca = table2cell(ds);
 % Auslesen der Anzahl an Rückgabevektoren
 num = numel(ca(1,:));
 % Prüfen, ob die richtige Zahl an Ausgabevariablen angefordert wurde
